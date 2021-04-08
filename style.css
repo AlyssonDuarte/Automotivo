@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: #333;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.header .nav-bar{
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80;
+
+}
+.header .nav-bar .logo{
+    margin-left: 50px;
+}
+
+.header .nav-bar .log a{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.header .nav-bar .menu li{
+    margin-right: 30px;
+
+}
+
+.header .nav-bar .menu li a{
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    /*font-family: 'Montserrat', sans-serif;*/
+
+}
+
+.header .nav-bar .menu li a.active{
+    font-weight: 800;
+}
+
+.header .nav-bar .icons ul li{
+    margin-right: 17px;
+}
+
+.header .nav-bar .icons ul li a{
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.header .nav-bar .icons ul li i{
+    width: 25px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    align-items: center;
+    font-size: 19px;
+    transition: all 0.3s;
+}
+
+.header .hero{
+    width: 100%;
+}
+
+.header .hero .row{
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    margin: auto;
+
+}
+.header .hero .row .left-sec{
+    width: 60%;
+    margin-left: 50px;
+}
+.header .hero .row .left-sec .content{
+    padding-top: 50px;
+    line-height: 130px;
+}
+.header .hero .row .left-sec .content h2{
+    position: relative;
+    font-size: 75px;
+    font-weight: 300;
+}
+/*traço*/
+.header .hero .row .left-sec .content h2::after{
+     content: '';
+     position: absolute;
+     bottom: 38px;
+     background-color: #1f1f1f;
+     width: 160px;
+     height: 3px;
+}
+
+.header .hero .row .left-sec .content h1{
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+.header .hero .row .left-sec .content h3{
+    font-size:66px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+/*caixa de comprar*/
+.header .hero .row .left-sec .content .btn{
+    display: block;
+    border: 2px solid #1f1f1f;
+    padding: 10px 25px;
+    width: 140px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    transition: all 0.5s;
+}
+.header .hero .row .left-sec .content .btn:hover{
+    background-color:  #1f1f1f;
+    color: #fff;
+
+}
+.header .right-sec{
+    width: 40%;
+    padding-top: 20px;
+}
+.header .right-sec img{
+height: 525px;
+margin: auto;
+}
+
+.slick-prev: before{
+content: '\f104';
+font-size: 55px;
+z-index: 9999;
+font-family: fontAwesome;
+}
+
+.slick-next: before{
+    content: '\f105';
+    font-size: 55px;
+    font-family: fontAwesome;
+    z-index: 9999;
+    }
+
+    .slick-prev, .slick-next{
+
+        margin-top: 50px;
+        top: 100% im !important;
+    }
+
+    .slick-prev{
+        left: 100px;
+    }
+
+    .slick-next{
+        right: 100px;
+    }
+    .slick-slie{
+        outline: auto;
+    }
